@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery explorer</title>
+    <script src="https://kit.fontawesome.com/ffcb50bab9.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
@@ -14,10 +15,25 @@
 <body>
     <div id="header" class="header"></div>
     <div id="menuBar" class="sticky-top"></div>
-    <div class="container-fluid">
+    <div id="content" class="container-fluid">
         <div class="mt-3">
-                <h3>Dashboard</h3>
-                <div class="mt-3">Comming soon...</div>
+            <h3>Fruits <span class="float-right"><a href="fruits-add.html" class="btn btn-primary mb-3">Add <i class="fas fa-plus-circle"></i></a></h3>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Fruit</th>
+                            <th>Family</th>
+                            <th>Price</th>
+                            <th>Unit of measurment</th>
+                            <th class="text-center">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fruitsList">
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -33,7 +49,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="../app.js"></script>
-    <script src="../scripts/home.js"></script>
+    <script src="../scripts/fruits.js"></script>
 </body>
 
 </html>
